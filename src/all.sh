@@ -4,5 +4,6 @@
 for i in $@
 do
     git checkout "$i"
-    find . -name "*.go" | xargs awk -f ~/Desktop/github/go-dependency-lists/src/find_import.awk | python ~/Desktop/github/go-dependency-lists/src/to_list.py | python -mjson.tool > "$i.json"
+    #find . -name "*.go" | xargs awk -f ~/Desktop/github/go-dependency-lists/src/find_import.awk | python ~/Desktop/github/go-dependency-lists/src/to_list.py | python -mjson.tool > "$i.json"
+    go list -f "{{.ImportPath}} {{.Deps}}" ./... | python ~/Desktop/github/go-dependency-lists/src/to_json.py | python -mjson.tool > "$i.json"
 done
