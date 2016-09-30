@@ -1,0 +1,13 @@
+[
+    "bytes",
+    "fmt",
+    "github.com/Sirupsen/logrus",
+    "github.com/mattn/go-colorable",
+    "io",
+    "math",
+    "os",
+    "strconv",
+    "strings",
+    "syscall",
+    "unsafe"
+]

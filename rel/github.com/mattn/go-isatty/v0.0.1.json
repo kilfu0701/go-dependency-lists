@@ -1,0 +1,8 @@
+[
+    "fmt",
+    "github.com/mattn/go-isatty",
+    "golang.org/x/sys/unix",
+    "os",
+    "syscall",
+    "unsafe"
+]

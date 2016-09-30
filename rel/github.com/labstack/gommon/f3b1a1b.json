@@ -1,0 +1,20 @@
+[
+    "bytes",
+    "encoding/json",
+    "fmt",
+    "github.com/mattn/go-colorable",
+    "github.com/mattn/go-isatty",
+    "github.com/stretchr/testify",
+    "github.com/valyala/fasttemplate",
+    "io",
+    "math/rand",
+    "os",
+    "os/exec",
+    "path",
+    "regexp",
+    "runtime",
+    "strconv",
+    "sync",
+    "testing",
+    "time"
+]
